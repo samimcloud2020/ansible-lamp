@@ -33,4 +33,11 @@ root@ip-172-31-82-195:/var/www/html# cat  /etc/apache2/sites-enabled/000-default
 --------------------------------------------------------------------------
 
 
+root@ip-172-31-82-195:/var/www/html# cat /etc/apache2/mods-enabled/dir.conf
+<IfModule mod_dir.c>
+        DirectoryIndex index.php index.cgi index.pl index.php index.xhtml index.htm
+</IfModule>
 
+# vim: syntax=apache ts=4 sw=4 sts=4 sr noet
+
+--------------------------------------------------------------------------------
