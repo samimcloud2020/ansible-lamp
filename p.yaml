@@ -79,7 +79,7 @@
         single_transaction: true
     
     - name: install apache2 git  php php-mysql
-      apt: name="{{ item }}" state=latest update_cache=yes
+      apt: name="{{ item }}" state=present update_cache=yes
       with_items:
         - php
         - apache2
