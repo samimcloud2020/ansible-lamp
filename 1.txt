@@ -41,3 +41,13 @@ root@ip-172-31-82-195:/var/www/html# cat /etc/apache2/mods-enabled/dir.conf
 # vim: syntax=apache ts=4 sw=4 sts=4 sr noet
 
 --------------------------------------------------------------------------------
+root@ip-172-31-82-195:/etc/apache2/sites-available# cat  /etc/apache2/sites-available/letmovecloud.com.conf
+<VirtualHost *:80>
+    ServerAdmin admin@letmovecloud.com
+    ServerName letmovecloud.com
+    ServerAlias www.letmovecloud.com
+    DocumentRoot /var/www/letmovecloud.com/public_html
+    ErrorLog ${APACHE_LOG_DIR}/error.log
+    CustomLog ${APACHE_LOG_DIR}/access.log combined
+</VirtualHost>
+------------------------------------------------------------------
